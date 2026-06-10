@@ -1,144 +1,372 @@
-<!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Esita Patel Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Esita Patel | Data Analyst Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f9f9f8;
+      color: #1a1a18;
+      font-size: 16px;
+      line-height: 1.7;
+    }
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Esita Patel<br />
-						</h1>
-						<p> Data Analyst with experience in Banking and Insurance industry. Advanced in interpreting, cleaning, analyzing, and reporting data using SQL, Python, Power BI,
-							and Tableau to support everyday business decisions and drive successful business solutions. <a href="https://www.linkedin.com/in/esita-patel-015999151">@Esita Patel</a>
-						</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+    a { text-decoration: none; color: inherit; }
 
-				<!-- Header -->
-					<header id="header">
-						<a class="logo">Projects</a>
-					</header>
+    .page {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a>Portfolio Projects</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/esita-patel-015999151/" class="icon brands fa-linkedin"><span class="label">linkedin</span></a></li>
-							<li><a href="https://github.com/patelesita22" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
+    /* ── HERO ── */
+    .hero {
+      padding: 3.5rem 0 2.5rem;
+      border-bottom: 1px solid #e5e4e0;
+    }
+    .hero-top {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .avatar {
+      width: 68px;
+      height: 68px;
+      border-radius: 50%;
+      background: #d4f0e4;
+      border: 1px solid #a3dcc4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      font-weight: 600;
+      color: #0d6647;
+      flex-shrink: 0;
+    }
+    .hero-info h1 {
+      font-size: 26px;
+      font-weight: 600;
+      letter-spacing: -0.4px;
+      color: #1a1a18;
+    }
+    .hero-info .tagline {
+      font-size: 15px;
+      color: #6b6b67;
+      margin-top: 5px;
+      max-width: 500px;
+      line-height: 1.6;
+    }
+    .hero-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 18px;
+    }
+    /* ── PILLS (hero links) ── */
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 16px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 500;
+      border: 1px solid #d0cfc9;
+      background: #ffffff;
+      color: #3a3a36;
+      cursor: pointer;
+      transition: background 0.15s, border-color 0.15s;
+    }
+    .pill:hover {
+      background: #f0efeb;
+      border-color: #b8b7b2;
+    }
+    .pill.green {
+      background: #d4f0e4;
+      border-color: #a3dcc4;
+      color: #0d6647;
+    }
+    .pill.green:hover {
+      background: #bfe8d7;
+    }
+    .pill svg {
+      width: 14px;
+      height: 14px;
+      flex-shrink: 0;
+    }
 
-				<!-- Main -->
-					<div id="main">
+    /* ── SECTIONS ── */
+    .section {
+      padding: 2rem 0;
+      border-bottom: 1px solid #e5e4e0;
+    }
+    .section:last-child {
+      border-bottom: none;
+      padding-bottom: 3.5rem;
+    }
+    .section-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      color: #9b9b96;
+      margin-bottom: 1rem;
+    }
 
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										<h2>Data Cleaning using SQL</h2>
-									</header>
-									<a href="https://github.com/patelesita22/Portfolio-Projects/blob/main/housing_data_cleaning.sql" class="image fit"><img src="images/housing.png" alt="" /></a>
-									<p> Used SQL server to clean Austin housing data. </p>
-									<ul class="actions special">
-										<li><a href="https://github.com/patelesita22/Portfolio-Projects/blob/main/housing_data_cleaning.sql" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<h2> Tableau Project </h2>
-									</header>
-									<a href="https://public.tableau.com/app/profile/esita.patel/viz/CovidDashboard_16874985789440/Dashboard1#2" class="image fit"><img src="images/tableau.png" alt="" /></a>
-									<p> Used Tableau to create dynamic dahsboards to display results of COVID data which was cleaned earlier. </p>
-									<ul class="actions special">
-										<li><a href="https://public.tableau.com/app/profile/esita.patel/viz/CovidDashboard_16874985789440/Dashboard1#2" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<h2>PowerBI Project</h2>
-									</header>
-									<a href="https://github.com/patelesita22/Portfolio-Projects/blob/main/README.md#below-is-the-power-bi-project" class="image fit"><img src="images/powerBI.jpg" alt="" /></a>
-									<p> Used PowerBI to create visuals. </p>
-									<ul class="actions special">
-										<li><a href="https://github.com/patelesita22/Portfolio-Projects/blob/main/README.md#below-is-the-power-bi-project" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<h2> Movies data correlation using Python </h2>
-									</header>
-									<a href="https://github.com/patelesita22/Portfolio-Projects/blob/main/Movie_Data_Correlation.ipynb" class="image fit"><img src="images/movies.jpg" alt="" /></a>
-									<p> Used Python and Anaconda to ETL and analyze released movies data to gain valuable correlations between diverse parameters. </p>
-									<p></p>
-									<ul class="actions special">
-										<li><a href="https://github.com/patelesita22/Portfolio-Projects/blob/main/Movie_Data_Correlation.ipynb" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<h2>Data Exploration using SQL</h2>
-									</header>
-									<a href="https://github.com/patelesita22/Portfolio-Projects/blob/main/SQLQuery1.sql" class="image fit"><img src="images/covid.jpg" alt="" /></a>
-									<p> Used SQL sever to perform exploration on COVID 19 data. </p>
-									<ul class="actions special">
-										<li><a href="https://github.com/patelesita22/Portfolio-Projects/blob/main/SQLQuery1.sql" class="button">View Project</a></li>
-									</ul>
-								</article>
-							</section>
-					</div>
+    /* ── SKILLS ── */
+    .skills-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .skill-tag {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 500;
+      border: 1px solid #d0cfc9;
+      background: #ffffff;
+      color: #3a3a36;
+    }
+    .skill-tag.highlight {
+      background: #ddeaf9;
+      border-color: #adc8ef;
+      color: #1a4f8a;
+    }
 
-				<!-- Footer -->
-					<footer id="footer">
-						<section class="split contact">
-							<section class="alt">
-								<h3>Location</h3>
-								<p>Houston, TX 77433</p>
-							</section>
-							<section>
-								<h3>Phone</h3>
-								<p><a href="#">(210) 993-2394</a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="#">esita.patel2294@gmail.com</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="#" class="icon brands alt fa-linkedin"><span class="label">linkedin</span></a></li>
-									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
+    /* ── PROJECT CARDS ── */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .proj-card {
+      background: #ffffff;
+      border: 1px solid #e0dfda;
+      border-radius: 14px;
+      padding: 1.25rem 1.25rem 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+    .proj-card:hover {
+      border-color: #b8b7b2;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+    .proj-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      margin-bottom: 4px;
+    }
+    .proj-card h3 {
+      font-size: 14px;
+      font-weight: 600;
+      color: #1a1a18;
+      line-height: 1.4;
+    }
+    .proj-card p {
+      font-size: 13px;
+      color: #6b6b67;
+      line-height: 1.55;
+      flex: 1;
+    }
+    .proj-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+    .proj-badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 999px;
+    }
+    .proj-link {
+      font-size: 12px;
+      font-weight: 500;
+      color: #1a5ca8;
+      display: flex;
+      align-items: center;
+      gap: 3px;
+      transition: color 0.15s;
+    }
+    .proj-link:hover { color: #0f3f78; text-decoration: underline; }
 
-			</div>
+    /* ── CONTACT ── */
+    .contact-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 14px;
+      color: #6b6b67;
+    }
+    .contact-item svg {
+      width: 15px;
+      height: 15px;
+      flex-shrink: 0;
+      color: #9b9b96;
+    }
+    .contact-item a {
+      color: #6b6b67;
+    }
+    .contact-item a:hover {
+      color: #1a1a18;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+<div class="page">
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-top">
+      <div class="avatar">EP</div>
+      <div class="hero-info">
+        <h1>Esita Patel</h1>
+        <p class="tagline">Senior Data Analyst with 6+ years of experience — turning complex datasets into KPIs, dashboards, and decisions using SQL, Python, Power BI, and Tableau.</p>
+        <div class="hero-links">
+          <a class="pill green" href="https://www.linkedin.com/in/esita-patel-015999151/" target="_blank">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+          <a class="pill" href="https://github.com/patelesita22" target="_blank">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            GitHub
+          </a>
+          <a class="pill" href="mailto:esita@webappemail.com">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 01-2.06 0L2 7"/></svg>
+            Email me
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-	</body>
+  <!-- SKILLS -->
+  <div class="section">
+    <div class="section-label">Core skills</div>
+    <div class="skills-wrap">
+      <span class="skill-tag highlight">SQL</span>
+      <span class="skill-tag highlight">Python</span>
+      <span class="skill-tag highlight">Power BI</span>
+      <span class="skill-tag highlight">Tableau</span>
+      <span class="skill-tag highlight">Snowflake</span>
+      <span class="skill-tag highlight">SAS</span>
+      <span class="skill-tag">Advanced Excel</span>
+      <span class="skill-tag">Data Cleaning</span>
+      <span class="skill-tag">ETL</span>
+      <span class="skill-tag">Data Exploration</span>
+      <span class="skill-tag">Dashboard Design</span>
+      <span class="skill-tag">KPI Reporting</span>
+      <span class="skill-tag">Customer Segmentation</span>
+      <span class="skill-tag">Churn Analysis</span>
+      <span class="skill-tag">Banking &amp; Insurance</span>
+      <span class="skill-tag">Jupyter / Anaconda</span>
+      <span class="skill-tag">Power Query</span>
+    </div>
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="section">
+    <div class="section-label">Portfolio projects</div>
+    <div class="projects-grid">
+
+      <div class="proj-card">
+        <div class="proj-icon" style="background:#fdf0d8;">📈</div>
+        <h3>WaveX Watercraft - Sales &amp; HR Analytics</h3>
+        <p>Built end-to-end Sales and HR dashboards in Power BI integrating Excel, Text, and PDF sources. Designed a star schema data model, wrote DAX measures for profitability and workforce KPIs, and deployed to Power BI Service for executive self-service reporting.</p>
+        <div class="proj-footer">
+          <span class="proj-badge" style="background:#fdf0d8;color:#7a4a0a;">Power BI</span>
+          <a class="proj-link" href="https://github.com/patelesita22/PowerBI-Sales-HR-Dashboard" target="_blank">View ↗</a>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-icon" style="background:#ddeaf9;">📊</div>
+        <h3>COVID-19 Global Analytics Dashboard</h3>
+        <p>Designed an interactive Tableau dashboard analyzing global COVID-19 trends — KPI cards for cases and mortality, an interactive world map for infection rates by country, continent-wise death analysis, and time-series population infection tracking.</p>
+        <div class="proj-footer">
+          <span class="proj-badge" style="background:#ddeaf9;color:#1a4f8a;">Tableau</span>
+          <a class="proj-link" href="https://public.tableau.com/app/profile/esita.patel/viz/CovidDashboard_16874985789440/Dashboard1#2" target="_blank">View ↗</a>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-icon" style="background:#fde8e3;">👥</div>
+        <h3>Customer Retention &amp; Churn Analysis</h3>
+        <p>Analyzed customer activity and churn indicators using SQL and Python to identify behavior patterns linked to retention risk. Cleaned and segmented customer data to surface high-risk groups, then visualized churn patterns and recommendations in Power BI.</p>
+        <div class="proj-footer">
+          <span class="proj-badge" style="background:#fde8e3;color:#8a2a1a;">SQL · Python</span>
+          <span class="proj-link" style="color:#9b9b96;font-size:12px;">Link coming soon</span>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-icon" style="background:#eeecfd;">🎬</div>
+        <h3>Movie Revenue Correlation Analysis</h3>
+        <p>Used Pandas, Matplotlib, and Seaborn in Jupyter to ETL and analyze 7,000+ films — uncovering that production budget has the strongest correlation to box office gross across all variables tested.</p>
+        <div class="proj-footer">
+          <span class="proj-badge" style="background:#eeecfd;color:#4a3fb0;">Python</span>
+          <a class="proj-link" href="https://github.com/patelesita22/Portfolio-Projects/blob/main/Movie_Data_Correlation.ipynb" target="_blank">View ↗</a>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-icon" style="background:#d4f0e4;">🏠</div>
+        <h3>Housing Data Cleaning</h3>
+        <p>Cleaned and standardized an Austin housing dataset in SQL Server — removed duplicates, split address fields, populated nulls via self-joins, and enforced consistent data types to make the data fully analysis-ready.</p>
+        <div class="proj-footer">
+          <span class="proj-badge" style="background:#d4f0e4;color:#0d6647;">SQL Server</span>
+          <a class="proj-link" href="https://github.com/patelesita22/Portfolio-Projects/blob/main/housing_data_cleaning.sql" target="_blank">View ↗</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <div class="section">
+    <div class="section-label">Contact</div>
+    <div class="contact-row">
+      <span class="contact-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+        Houston, TX
+      </span>
+      <a class="contact-item" href="tel:2814005947">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
+        (281) 400-5947
+      </a>
+      <a class="contact-item" href="mailto:esita@webappemail.com">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 01-2.06 0L2 7"/></svg>
+        esita@webappemail.com
+      </a>
+    </div>
+  </div>
+
+</div>
+</body>
 </html>
